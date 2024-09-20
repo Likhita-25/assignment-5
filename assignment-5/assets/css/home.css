@@ -1,0 +1,235 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-size: cover; /* Ensures the image covers the entire background */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0; /* Adjust padding if needed */
+}
+
+
+/* Responsive Header Styles */
+header {
+    background-color: #fff;
+    padding: -10px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px; /* Adjust the logo margin */
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Gowun Batang', cursive;
+    color: #384B70;
+    padding: 10px 20px;
+    border: 2px solid #9393ff;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+    background-color: #55679C;
+    border-color: #007BFF;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack the header content vertically */
+        padding: 10px 0;
+    }
+
+    header .logo {
+        margin: 10px 0;
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        text-align: center;
+        margin: 0;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    header nav ul li a {
+        width: 100%; /* Make navigation links take up full width */
+        padding: 10px 0;
+    }
+}
+
+/* Tablet Responsiveness */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header nav ul {
+        margin-right: 10px; /* Reduce right margin for tablets */
+    }
+
+    header nav ul li a {
+        padding: 8px 15px; /* Slightly reduce padding for tablets */
+    }
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full screen height */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: flex-end; /* Move content to the bottom */
+    padding-bottom: 30px; /* Add some padding if needed */
+}
+
+
+/* Image Slider Styling */
+.img-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Full height of the viewport */
+    overflow: hidden;
+    z-index: -1; /* Behind other content */
+}
+
+.img-slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the slider area */
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.img-slider img.active {
+    opacity: 1;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0; /* Smaller padding for footer */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Ensure footer text is centered and not too large */
+footer p {
+    margin: 0;
+    font-size: 12px; /* Smaller font size for footer text */
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Change to your preferred hover color */
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px; /* Adjust margin for better spacing on small screens */
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 5px; /* Adjust margin for better spacing on small screens */
+    }
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full screen height */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+

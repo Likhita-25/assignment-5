@@ -1,0 +1,209 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Ensure html and body take full height */
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('./6-Health-Benefits-of-Playing-Sports-1024x683.jpg'); /* Use background-image property */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+
+.container {
+    flex: 1; /* Allows the container to grow and push footer down */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px 0; /* Adjust padding if needed */
+}
+
+/* Centering container vertically */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 5px 0; /* Further reduced padding for header */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Lighter shadow for a smaller header */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Header Content */
+header .logo {
+    display: inline-block;
+    font-size: 18px; /* Further reduced font size for header */
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px; /* Adjusted margin for spacing */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 18px; /* Increased font size for navigation links */
+    font-family: 'Gowun Batang', cursive; /* Changed to 'Gowun Batang' */
+    color: #384B70;
+    padding: 10px 20px; /* Added padding */
+    border: 2px solid #9393ff; /* Added border */
+    border-radius: 10px; /* Slightly rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+header nav ul li a:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: #55679C; /* Change background color on hover */
+    border-color: #007BFF; /* Match border color with background color on hover */
+}
+
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    left: 80%;
+    margin-top: 100px;
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+}
+
+/* Profile Picture */
+/* Profile Picture */
+.profile-pic {
+    flex-shrink: 0;
+    margin-right: 20px;
+    width: 150px; /* Ensure the profile-pic container has enough width */
+    height: 150px; /* Ensure the profile-pic container has enough height */
+}
+
+.profile-pic img {
+    width: 100%; /* Set width to fill the container */
+    height: 100%; /* Set height to fill the container */
+    border-radius: 50%;
+    object-fit: cover; /* Ensure the image fits within the container */
+    background-image: url('./pic.webp');
+}
+
+
+/* Profile Info */
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #333;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 20px;
+    }
+
+    .profile-pic img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom of the page */
+}
+
+/* Social Icons */
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Change to your preferred hover color */
+}
+
+/* Contact Info */
+.contact-info p {
+    margin: 5px 0;
+}
